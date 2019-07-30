@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Great Vibes';
+  font-weight: 400;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/greatvibes/v4/6q1c0ofG6NKsEhAc2eh-3WfQcKutQXcIrRfyR5jdjY8.eot');
+  src: url('http://fonts.gstatic.com/s/greatvibes/v4/6q1c0ofG6NKsEhAc2eh-3WfQcKutQXcIrRfyR5jdjY8.eot?#iefix') format('embedded-opentype'),
+       local('Great Vibes'),
+       local('Great-Vibes-regular'),
+       url('http://fonts.gstatic.com/s/greatvibes/v4/6q1c0ofG6NKsEhAc2eh-3Ygp9Q8gbYrhqGlRav_IXfk.woff2') format('woff2'),
+       url('http://fonts.gstatic.com/s/greatvibes/v4/6q1c0ofG6NKsEhAc2eh-3brIa-7acMAeDBVuclsi6Gc.woff') format('woff'),
+       url('http://fonts.gstatic.com/s/greatvibes/v4/6q1c0ofG6NKsEhAc2eh-3Z0EAVxt0G0biEntp43Qt6E.ttf') format('truetype'),
+       url('http://fonts.gstatic.com/l/font?kit=6q1c0ofG6NKsEhAc2eh-3XNsigHlcrQGNV8nkUSFQfc&skey=1a66edef5eadc723&v=v4#GreatVibes') format('svg');
+}
+
+.frontPage{
+  height:100vh;
+  width:100%;
+  background-image:url(../images/landingpage-282kb.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title{
+  font-family:'Great Vibes', cursive;
+  font-size:5em;
+  padding:0;
+  margin:0;
+  position: fixed;
+  top: 30%;
+  left:25%;
+}
+.languages{
+  font-family: 'Great Vibes', cursive;
+  font-size:2em;
+  position: fixed;
+  list-style: none;
+  top:45%;
+  left:25%;
+}
+.languages a{
+  color:black;
+}
+.languages a:hover{
+  text-decoration: none;
+  color:gray;
+}
+.languages li{
+    display: inline;
+    margin-right:20px;
+}
+#videoInstructions{
+  padding:0;
+  margin:0;
+  position: fixed;
+  font-size:2em;
+  top:52%;
+  left:35%;
+}
+#videoInstructions a:hover{
+  color:gray;
+  text-decoration: none;
+}
+#videoInstructions a{
+  font-family:'Great Vibes', cursive;
+  color:black;
+
+}
+#copyright{
+  font-family: 'Great Vibes',cursive;
+  font-size:2em;
+  margin:0;
+  padding:0;
+  position: fixed;
+  top:60%;
+  left:32.5%;
+}
+#copyrightLink{
+  color:black;
+}
+#copyrightLink:hover{
+  color:gray;
+  text-decoration: none;
+}
+
+@media screen and (max-width:950px){
+  #title{
+    font-size:4.5em;
+  }
+}
+@media screen and (max-width:800px){
+  #title{
+    font-size:4em;
+  }
+  .languages, #videoInstructions, #copyright{
+    font-size:1.8em;
+  }
+  .languages{
+    left:20%;
+  }
+}
+@media screen and (max-width:700px){
+  #title{
+    font-size:3.2em;
+  }
+  .languages, #videoInstructions, #copyright{
+    font-size:1.5em;
+  }
+}
+@media screen and (max-width:600px){
+  #title{
+    font-size:2.8em;
+  }
+  .languages, #videoInstructions, #copyright{
+    font-size:1.5em;
+  }
+  .languages{
+    left:13%;
+  }
+}
+@media screen and (max-width:500px){
+  #title{
+    font-size:2.8em;
+  }
+  .languages, #videoInstructions, #copyright{
+    font-size:1.5em;
+  }
+  #croatian, #english, #german, #french{
+    margin:0;
+    padding:2px;
+  }
+  .languages{
+    left:3%;
+  }
+}
+@media screen and (max-width:400px){
+ #videoInstructions{
+    left:30%;
+  }
+  #copyright{
+    left:20%;
+  }
+}

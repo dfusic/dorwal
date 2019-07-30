@@ -1,0 +1,50 @@
+body{
+  margin:0;
+  padding:0;
+  background-color:rgb(31,79,112);
+}
+.flex-grid{
+  display:flex;
+}
+.col{
+  flex:1;
+}
+.header{
+  text-align: center;
+  font-family: 'Great Vibes',cursive;
+  color:white;
+  font-weight: 100;
+  font-size:48px;
+}
+.wide-image, .high-image{
+  display:block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:35px;
+}
+.wide-image{
+  width:250px;
+  height:200px;
+}
+.high-image{
+  width:200px;
+  height:300px;
+}
+
+
+
+
+@media screen and (max-width:770px){
+  .flex-grid{
+    display:block;
+  }
+  .wide-image{
+    width:400px;
+  }
+  .high-image{
+    width:300px;
+  }
+}

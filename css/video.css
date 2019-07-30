@@ -1,0 +1,56 @@
+body{
+  background-color: #1f4f70;
+}
+.video{
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+.buttonStyleNext {
+	position: absolute;
+	color: white;
+	position: fixed;
+	background: rgba(0, 6, 21, 0.4);
+	border-radius: 25px;
+	font-weight: bolder;
+	border: none;
+	top: 50vh;
+	right: 15px;
+	padding: 10px 15px;
+  font-size: 10px;
+	-webkit-transition: 0.3s ease;
+	box-shadow: 1px 1px 1px darkslategray;
+	cursor: pointer;
+	z-index: 1000;
+	font-family: "Times New Roman", Times, serif
+}
+
+.buttonStyleNext a {
+	font-family: "Times New Roman", Times, serif;
+	color: white;
+	text-decoration: none;
+}
+
+.buttonStyleNext:hover {
+	background-color: rgba(0, 6, 21, 0.9);
+	transition: 0.3s ease;
+	box-shadow: 2px 2px 2px black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.buttonStyleNext:hover a {
+	color: white;
+}
+@media screen and (max-width:1000px){
+  .video{
+    top: 15vh;
+  }
+  .buttonStyleNext>a{
+    font-size: 8px;
+  }
+}
+@media screen and (max-width:450px){
+  .video{
+    top: 25vh;
+  }
+}

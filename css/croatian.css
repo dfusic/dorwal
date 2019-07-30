@@ -1,0 +1,388 @@
+/* font-family: 'Great Vibes', cursive; 
+   font-family: "Times New Roman", Times, serif*/
+@font-face {
+  font-family: 'Great Vibes';
+  font-weight: 400;
+  font-style: normal;
+  src: url('http://fonts.gstatic.com/s/greatvibes/v4/6q1c0ofG6NKsEhAc2eh-3WfQcKutQXcIrRfyR5jdjY8.eot');
+  src: url('http://fonts.gstatic.com/s/greatvibes/v4/6q1c0ofG6NKsEhAc2eh-3WfQcKutQXcIrRfyR5jdjY8.eot?#iefix') format('embedded-opentype'),
+       local('Great Vibes'),
+       local('Great-Vibes-regular'),
+       url('http://fonts.gstatic.com/s/greatvibes/v4/6q1c0ofG6NKsEhAc2eh-3Ygp9Q8gbYrhqGlRav_IXfk.woff2') format('woff2'),
+       url('http://fonts.gstatic.com/s/greatvibes/v4/6q1c0ofG6NKsEhAc2eh-3brIa-7acMAeDBVuclsi6Gc.woff') format('woff'),
+       url('http://fonts.gstatic.com/s/greatvibes/v4/6q1c0ofG6NKsEhAc2eh-3Z0EAVxt0G0biEntp43Qt6E.ttf') format('truetype'),
+       url('http://fonts.gstatic.com/l/font?kit=6q1c0ofG6NKsEhAc2eh-3XNsigHlcrQGNV8nkUSFQfc&skey=1a66edef5eadc723&v=v4#GreatVibes') format('svg');
+}
+
+.knjiga{
+    position: absolute;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    top: 600px;
+    left: calc(50% - 350px);
+    line-height: 80%;
+    transition: left 0.5s;
+    transition: top 0.2s;
+}
+
+.knjiga_english{
+    position: absolute;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    top: 600px;
+    left: calc(50% - 350px);
+    line-height: 80%;
+    transition: left 0.5s;
+    transition: top 0.2s;
+}
+.knjiga_german{
+    position: absolute;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    top: 600px;
+    left: calc(50% - 350px);
+    line-height: 80%;
+    transition: left 0.5s;
+    transition: top 0.2s;
+}
+.knjiga_french{
+    position: absolute;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    top: 35em;
+    left: calc(50% - 350px);
+    line-height: 80%;
+    transition: left 0.5s;
+    transition: top 0.2s;
+}
+span{
+    background-color:rgba(255, 255, 255, 0.6);; 
+}
+.naslov{
+    position: absolute;
+    color: black;
+    font-size: 100px;
+    top: -200px;
+    left: 250px;
+    font-family: 'Great Vibes', cursive;
+}
+.naslov_english{
+    position: absolute;
+    color: black;
+    font-size: 80px;
+    top: 200px;
+    left: 100px;
+    font-family: 'Great Vibes', cursive;
+}
+.naslov_german{
+    position: absolute;
+    color: black;
+    font-size: 80px;
+    top: 200px;
+    left: 100px;
+    font-family: 'Great Vibes', cursive;
+}
+.buttonStyleNext{
+    position: absolute;
+    color: white;
+    position: fixed;
+    background-color: rgba(0, 6, 21, 0.4);
+    border-radius: 25px;
+    border: none;
+	font-weight: bolder;
+    top: 50vh;
+    right: 100px;
+    padding: 20px 25px;
+    -webkit-transition:0.3s ease;
+    box-shadow: 2px 2px 2px darkslategray;
+	z-index: 1000;
+	font-family: "Times New Roman", Times, serif
+}
+.buttonStyleNext a{
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    text-decoration: none;
+}
+.buttonStyleNext:hover{
+    background-color: rgba(0, 6, 21, 0.9);
+    transition: 0.3s ease;
+    box-shadow: 2px 2px 2px black;
+    text-decoration: none;
+}
+.opacityFirstPage{
+    opacity: 1;
+}
+
+/* Responsive first page */
+@media screen and (max-width:1350px){
+    .knjiga{
+        left: 300px;
+    }
+}
+
+
+@media screen and (max-width:1263px){
+    .knjiga{
+        left: 275px;
+    }
+	
+}
+@media screen and (max-width:1210px){
+    .knjiga{
+        left: 245px;
+        top: 550px;
+    }
+}
+@media screen and (max-width:1150px){
+    .knjiga{
+        left: 225px;
+        top: 550px;
+    }
+}
+@media screen and (max-width:1110px){
+    .knjiga{
+        left: 205px;
+        top: 460px;
+    }
+}
+@media screen and (max-width:1050px){
+    .knjiga{
+        left: 160px;
+        top: 460px;
+    }
+	.knjiga_german{
+		top: 20em;
+		font-size: 15px;
+	}
+}
+@media screen and (max-width:1014px){
+    .knjiga{
+        left: 150px;
+        top: 390px;
+    }
+}
+@media screen and (max-width:1000px){
+	.buttonStylePrev {
+		font-size: 10px;
+		left: 100px;
+	}
+	.knjiga_french{
+		top: 25em;
+		font-size: 16px;
+	}
+	.knjiga_english{
+		top: 30em;
+		font-size: 12px;
+		left: 25em;
+	}
+	.knjiga_german{
+		font-size: 11px;
+		line-height: 40%;
+		top: 30em;
+		left: 25em;
+	}
+}
+@media screen and (max-width:950px){
+    .knjiga{
+        left: 100px;
+        top: 390px;
+    }
+}
+@media screen and (max-width:950px){
+    .knjiga{
+        font-size: 12px;
+        left: 200px;
+        top: 350px;
+    }
+}
+@media screen and (max-width:950px){
+    .knjiga{
+        font-size: 12px;
+        left: 170px;
+        top: 350px;
+    }
+}
+@media screen and (max-width:830px){
+    .knjiga{
+        font-size: 12px;
+        left: 130px;
+        top: 330px;
+    }
+}
+@media screen and (max-width:770px){
+    .knjiga{
+        font-size: 11px;
+        left: 100px;
+        top: 270px;
+    }
+}
+@media screen and (max-width:750px){
+	.buttonStyleNext {
+		right: 50px;
+		font-size: 5px;
+	}
+	.knjiga_french{
+		font-size: 10px;
+		top: 30em;
+		left: 17em;
+	}
+	.knjiga_english{
+		top: 25em;
+		font-size: 10px;
+		line-height: 30%;
+		left: 20em;
+	}
+	.knjiga_german{
+		top: 20em;
+		left: 20em;
+		font-size: 9px;
+		line-height: 30%;
+	}
+}
+@media screen and (max-width:680px){
+    .knjiga{
+        font-size: 11px;
+        left: 75px;
+        top: 220px;
+    }
+}
+@media screen and (max-width:600px){
+    .knjiga{
+        font-size: 8px;
+        left: 75px;
+        top: 220px;
+    }
+}
+@media screen and (max-width:580px){
+    .knjiga{
+        font-size: 8px;
+        left: 75px;
+        top: 200px;
+    }
+}
+@media screen and (max-width:550px){
+	.buttonStyleNext{
+		right: 5px; !important
+	}
+	.knjiga_french{
+		top: 30em;
+		left: 15em;
+		line-height: 10%;
+		font-size: 7px;
+	}
+	#background_page {
+		height: 100vh;
+	}
+	.knjiga_english{
+		top: 25em;
+		font-size: 8px;
+		line-height: 20%;
+		left: 15em;
+	}
+	.knjiga_german{
+		left: 20em;
+		font-size: 7px;
+		top: 20em;
+		line-height: 10%;
+	}
+}
+@media screen and (max-width:535px){
+    .knjiga{
+        font-size: 8px;
+        left: 75px;
+        top: 150px;
+    }
+}
+@media screen and (max-width:500px){
+    .knjiga{
+        font-size: 8px;
+        left: 75px;
+        top: 140px;
+    }
+}
+@media screen and (max-width:487px){
+    .knjiga{
+        font-size: 8px;
+        left: 75px;
+        top: 120px;
+    }
+    .pozadina{
+        height:100vh;
+    }
+}
+@media screen and (max-width:450px){
+    .knjiga{
+        font-size: 7px;
+        left: 35px;
+        top: 150px;
+    }
+    .pozadina{
+        height:100vh;
+    }
+}
+@media screen and (max-width:400px){
+    .knjiga{
+        font-size: 7px;
+        left: 25px;
+        top: 150px;
+    }
+    .pozadina{
+        height:100vh;
+    }
+	.knjiga_english{
+		left: 5em;
+	}
+}
+@media screen and (max-width:366px){
+    .knjiga{
+        font-size: 7px;
+        left: 20px;
+        top: 150px;
+    }
+    .pozadina{
+        height:100vh;
+    }
+}
+@media screen and (max-width:346px){
+    .knjiga{
+        font-size: 6px;
+        left: 20px;
+        top: 150px;
+		line-height: 10%;
+    }
+    .pozadina{
+        height:100vh;
+    }
+	.knjiga_french{
+		top: 25em; !important
+		font-size: 3px;
+		left: 5em;
+	}
+	.knjiga_english{
+		top: 15em;
+		font-size: 8px;
+		left: 5em;
+		line-height: 10%;
+	}
+	.knjiga_german{
+		font-size: 8px;
+		top: 5em;
+		left: 1em;
+		line-height: 1%;
+	}
+	
+/* First Page Media Query End */
+
+
+
+
+
+
